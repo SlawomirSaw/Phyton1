@@ -13,7 +13,7 @@ def getTransparencyEntsoeEUData():
     # B17 = Waste; B18 = Wind Offshore; B19 = Wind Onshore; B20 = Other; B25 = Energy storage
         
     country_code = 'PL'
-    client = EntsoePandasClient(api_key='3d91fe70-07f4-4f69-851b-18c1b12c9005')
+    client = EntsoePandasClient(api_key='#################################')
     start = pd.Timestamp('2026-05-01 00:00:00', tz='Europe/Warsaw')
     end = pd.Timestamp('2026-06-01 00:00:00', tz='Europe/Warsaw')
     generationPerType = client.query_generation(country_code, start=start, end=end, psr_type=None, resolution='60min')
